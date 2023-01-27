@@ -3,7 +3,8 @@ const softwareCard = document.querySelector(".software");
 const cloudCard = document.querySelector(".cloud");
 const implementationCard = document.querySelector(".implementation");
 const blockchainCard = document.querySelector(".blockchain");
-const nextEmoji = document.querySelector(".next-emoji");
+const nextEmoji = document.querySelector(".emoji.next");
+const previousEmoji = document.querySelector(".emoji.previous");
 
 // Removes and add new Card
 function changeCard() {
@@ -70,13 +71,15 @@ function secondInitialState() {
 }
 
 nextEmoji.addEventListener("click", (e) => {
-  e.target.classList.toggle("clicked");
+  e.target.classList.remove("animate__shakeX");
+  previousEmoji.classList.add("animate__shakeX");
+  secondInitialState();
+  changeCard();
+});
 
-  if (nextEmoji.classList.contains("clicked")) {
-    secondInitialState();
-    changeCard();
-  } else {
-    firstInitialState();
-    reverseChangeCard();
-  }
+previousEmoji.addEventListener("click", (e) => {
+  e.target.classList.remove("animate__shakeX");
+  nextEmoji.classList.add("animate__shakeX");
+  firstInitialState();
+  reverseChangeCard();
 });
