@@ -747,7 +747,6 @@ footer {
 @media (max-width: 1024px) {
   .introduction {
     margin: 100px auto 0 auto;
-    padding-bottom: 100px;
   }
 
   .introduction h1 {
@@ -804,10 +803,6 @@ footer {
 
   .navigation a {
     font-size: 1.15rem;
-  }
-
-  .introduction {
-    padding-bottom: 100px;
   }
 
   .introduction h1 {
@@ -931,7 +926,6 @@ footer {
 
   .introduction {
     margin: 50px auto 0 auto;
-    padding-bottom: 100px;
   }
 
   .introduction h1 {
@@ -1091,8 +1085,7 @@ footer {
   }
 
   .introduction {
-    margin: 20px auto 0 auto;
-    padding-bottom: 100px;
+    margin: 35px auto 0 auto;
   }
 
   .introduction h1 {
