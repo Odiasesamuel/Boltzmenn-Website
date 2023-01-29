@@ -165,11 +165,9 @@ nav {
   max-width: 1100px;
   padding: 0 2.5%;
   margin: 0 auto;
-  /* background-color: pink; */
 }
 
 .services-text {
-  /* background-color: brown; */
   width: 60%;
   margin: 0 auto;
   text-align: center;
@@ -235,7 +233,6 @@ nav {
 }
 
 .services-card .card .software-logo {
-  /* background-color: rebeccapurple; */
   width: 60px;
   height: 60px;
   position: relative;
@@ -369,7 +366,6 @@ nav {
   min-height: 550px;
   display: flex;
   flex-wrap: wrap;
-  /* background-color: yellowgreen; */
   align-items: center;
   justify-content: space-between;
 }
@@ -495,7 +491,6 @@ nav {
 }
 
 .business {
-  /* background-color: rebeccapurple; */
   display: flex;
   justify-content: space-between;
   min-height: 400px;
@@ -506,7 +501,6 @@ nav {
 
 .business-text {
   width: 46%;
-  /* background-color: aqua; */
   color: #18191f;
   height: fit-content;
   align-self: center;
@@ -529,7 +523,6 @@ nav {
 }
 
 .business-image {
-  /* background-color: rebeccapurple; */
   width: 38%;
   position: relative;
 }
