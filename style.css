@@ -542,7 +542,7 @@ nav {
   width: 100%;
   background-color: #ffffff;
   margin-top: 250px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .client-logo {
@@ -556,7 +556,6 @@ nav {
 
 .client-logo img {
   width: 24%;
-  height: 250px;
 }
 
 .blog-container {
@@ -877,7 +876,7 @@ footer {
   }
 
   .client-logo-container {
-    margin-top: 450px
+    margin: 450px 0 50px 0;
   }
 
   .blog-container {
@@ -1029,8 +1028,7 @@ footer {
   }
 
   .client-logo-container {
-    margin-top: 120px;
-    margin-bottom: 30px;
+    margin-top: 200px;
   }
 
   .client-logo {
@@ -1038,8 +1036,7 @@ footer {
   }
 
   .client-logo img {
-    width: 32%;
-    height: 300px;
+    width: 31%;
   }
 
   .client-logo img.hide {
@@ -1203,8 +1200,21 @@ footer {
   }
 
   .client-logo-container {
-    margin-top: 100px;
-    margin-bottom: 0;
+    margin-top: 200px;
+    /* margin-bottom: 30px; */
+  }
+
+  .client-logo {
+    gap: 20px;
+  }
+
+  .client-logo img {
+    /* background-color: rebeccapurple; */
+    width: 47%;
+  }
+
+  .client-logo img.hide {
+    display: block;
   }
 
   .blog-heading {
