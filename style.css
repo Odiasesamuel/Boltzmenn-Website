@@ -16,7 +16,7 @@ button#scroll-to-top {
   outline: none;
   cursor: pointer;
   border: none;
-  color: #F8F7F7;
+  color: #f8f7f7;
   z-index: 200;
   transition: opacity 2s ease;
 }
@@ -145,10 +145,24 @@ header button {
   font-weight: 700;
 }
 
+.services-nav-mobile {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  width: 150px;
+  justify-content: space-between;
+  margin: 30px 0 10px 20px;
+}
+
+li .services-nav-mobile a {
+  font-size: 1.25rem;
+}
+
 nav {
   width: 50%;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .navigation a {
@@ -166,6 +180,47 @@ nav {
 
 .navigation a:hover {
   color: #0c8e88;
+}
+
+.services-nav {
+  width: 120px;
+  height: 140px;
+  position: absolute;
+  top: 40px;
+  transform: translateX(-25%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-nav a:nth-child(1),
+.services-nav-mobile a:nth-child(1) {
+  animation: backInLeft;
+  animation-duration: 1.25s;
+  transition: transform ease-in-out 1s;
+}
+.services-nav a:nth-child(2),
+.services-nav-mobile a:nth-child(2) {
+  animation: backInLeft;
+  animation-duration: 1s;
+  transition: transform ease-in-out 0.75s;
+}
+.services-nav a:nth-child(3),
+.services-nav-mobile a:nth-child(3) {
+  animation: backInLeft;
+  animation-duration: 0.75s;
+  transition: transform ease-in-out 0.5s;
+}
+.services-nav a:nth-child(4),
+.services-nav-mobile a:nth-child(4) {
+  animation: backInLeft;
+  animation-duration: 0.5s;
+  transition: transform ease-in-out 0.25s;
+}
+
+.show {
+  transform: translateX(-1200px);
 }
 
 .introduction {
@@ -225,9 +280,11 @@ nav {
 
 .product-container {
   width: 100%;
-  background-image: linear-gradient(180deg,
-      rgba(255, 255, 255, 0.87) -81.45%,
-      #ffffff 14%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.87) -81.45%,
+    #ffffff 14%
+  );
 }
 
 .product {
@@ -300,14 +357,14 @@ nav {
 }
 
 .technology-container {
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
   width: 100%;
   padding: 50px 0;
   /* margin-bottom: 300px; */
 }
 
 .growth-container {
-  background-color: #F8F7F7;
+  background-color: #f8f7f7;
   width: 100%;
   padding: 50px 0;
 }
@@ -348,7 +405,7 @@ nav {
 }
 
 .bob1 {
-  background-color: #A0DCFF;
+  background-color: #a0dcff;
   width: 30px;
   height: 60px;
   border-radius: 0 150px 150px 0;
@@ -372,7 +429,7 @@ nav {
 }
 
 .bob2 {
-  background: linear-gradient(194.01deg, #D9E8EF 9.6%, #EAF2F5 89.64%);
+  background: linear-gradient(194.01deg, #d9e8ef 9.6%, #eaf2f5 89.64%);
   width: 30px;
   height: 60px;
   border-radius: 150px 0 0 150px;
@@ -396,7 +453,7 @@ nav {
 }
 
 .bob3 {
-  background-color: #C1E5C0;
+  background-color: #c1e5c0;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -404,7 +461,6 @@ nav {
   bottom: 0;
   right: 110px;
 }
-
 
 .technology-text,
 .growth-text {
@@ -433,7 +489,6 @@ nav {
 .growth-text .heading.education {
   width: 180px;
 }
-
 
 .technology-text .heading h3,
 .growth-text .heading h3 {
@@ -607,8 +662,8 @@ nav {
 
 .blog-heading p {
   font-size: 0.9rem;
-  line-height: 1.2rem;
   font-weight: 400;
+  line-height: 1.2rem;
   opacity: 0.7;
 }
 
@@ -759,10 +814,6 @@ footer {
   height: 15px;
 }
 
-
-
-
-
 /* Laptop view */
 @media (max-width: 1024px) {
   .introduction {
@@ -851,7 +902,7 @@ footer {
   }
 
   .growth-img {
-    background-image: url(images/Image\ 1\ \(1\).png);
+    background-image: url(images/Image\1\\(1\).png);
   }
 
   .technology-img.branding {
@@ -859,7 +910,7 @@ footer {
   }
 
   .growth-img.education {
-    background-image: url(images/Image\ 1\ \(2\).png);
+    background-image: url(images/Image\1\\(2\).png);
   }
 
   .img1,
@@ -923,10 +974,6 @@ footer {
     position: absolute;
     top: 45px;
   }
-
-
-
-
 }
 
 /* Small Tablet View */
@@ -936,7 +983,8 @@ footer {
     height: 80px;
   }
 
-  header button, .nav {
+  header button,
+  .nav {
     display: block;
   }
 
@@ -950,7 +998,7 @@ footer {
 
   .introduction h1 {
     font-size: 2.8rem;
-    line-height: 3.0rem;
+    line-height: 3rem;
     padding-bottom: 10px;
   }
 
@@ -1068,7 +1116,6 @@ footer {
     width: 70%;
     margin-left: 15%;
   }
-  
 
   .blog-img:nth-child(3) {
     display: none;
@@ -1078,7 +1125,7 @@ footer {
     height: 280px;
     width: 48%;
   }
-  
+
   .cols {
     width: 90%;
     margin-left: 10%;
@@ -1092,7 +1139,6 @@ footer {
   .footer-logo {
     display: none;
   }
-
 }
 
 /* Mobile view */
@@ -1279,5 +1325,4 @@ footer {
   .sub-footer p {
     font-size: 0.65rem;
   }
-
 }
