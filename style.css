@@ -276,6 +276,7 @@ nav {
   opacity: 1;
   font-weight: 500;
   letter-spacing: 2px;
+  color: #18191f;
 }
 
 .product-container {
@@ -903,7 +904,7 @@ footer {
 
   .growth-img {
     background-image: url(images/Image\1\\(1\).png);
-  }
+  } 
 
   .technology-img.branding {
     background-image: url(images/Image\ 1.png);
