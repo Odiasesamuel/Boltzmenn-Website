@@ -224,238 +224,57 @@ nav {
   transform: translateX(-1200px);
 }
 
-.about-intro-container {
+.genz-container {
   width: 100%;
+  margin-top: 70px;
   background-color: #fff;
-  margin-top: 75px;
 }
 
-.about-intro {
+.genz-text {
   max-width: 1100px;
   padding: 0 2.5%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-intro-text {
-  width: 50%;
-}
-
-.about-intro-text span {
-  color: #0c8e88;
-}
-
-.about-intro-text p span {
-  font-weight: 700;
-}
-
-.about-intro-text p {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
+  color: #18191f;
+}
+
+.genz-text span {
+  font-size: 0.8rem;
   line-height: 1.2rem;
-  opacity: 0.8;
-}
-
-.about-intro-text h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  font-weight: 500;
-  margin: 10px 0;
-}
-
-.about-intro-img {
-  width: 47%;
-}
-
-.about-intro-img img {
-  width: 100%;
-  height: auto;
-}
-
-.service-agency-container {
-  width: 100%;
-  background-color: #fff;
-  margin-top: 150px;
-}
-
-.service-agency {
-  max-width: 1100px;
-  padding: 0 2.5%;
-  margin: 0 auto;
-  /* background-color: rebeccapurple; */
-  display: flex;
-  justify-content: space-between;
-}
-
-.service-agency-text {
-  width: 48%;
-}
-
-.service-agency-text p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  line-height: 1.4rem;
-  font-weight: 400;
-  color: #18191f;
-}
-
-.service-agency-text p:nth-child(2) {
-  margin-top: 25px;
-}
-
-.title-services {
-  max-width: 400px;
-  height: 70px;
-  position: relative;
-  margin-top: 50px;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-}
-
-.title.product {
-  width: 130px;
-  top: 0;
-  left: 0;
-}
-.title.software {
-  width: 178px;
-  top: 0;
-  right: 0;
-}
-
-.title.market {
-  width: 140px;
-  bottom: 0;
-  left: 0;
-}
-
-.title.branding {
-  bottom: 0;
-  right: 0;
-  width: 180px;
-  padding-right: 180px;
-}
-
-.title h4 {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem;
-}
-
-.service-agency-img {
-  width: 48%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.service-agency-img .rectangle-13 {
-  width: 49%;
-}
-
-.service-agency-img img {
-  width: 100%;
-  height: auto;
-}
-
-.our-mission-container {
-  width: 100%;
-  min-height: 400px;
-  margin-top: 100px;
-  background: linear-gradient(90deg, #02746f 50%, #ffffff 50%);
-  position: relative;
-}
-
-.our-mission-text {
-  max-width: 1100px;
-  padding: 0 2.5%;
-  margin: 0 auto;
-  min-height: 400px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.our-mission-text1 {
-  width: 45%;
-  display: flex;
-  align-items: center;
-}
-
-.our-mission {
-  color: #fff;
-}
-
-.about-us {
-  color: #18191f;
-}
-
-.our-mission h6,
-.about-us h6 {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
   opacity: 0.7;
+  font-weight: 400;
 }
 
-.our-mission h3,
-.about-us h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.3rem;
-  line-height: 2.7rem;
-  font-weight: 600;
-  margin: 15px 0;
+.genz-text h3 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  margin: 10px 0 20px 0;
 }
 
-.our-mission p,
-.about-us p {
+.genz-text p {
   font-size: 1rem;
   line-height: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   opacity: 0.7;
+  font-weight: 400;
 }
 
-.new-project-container {
-  background-color: #fff;
+.blog-img-container {
   width: 100%;
   margin-top: 50px;
+  background-color: #fff;
 }
 
-.new-project {
+.blog-img {
   max-width: 1100px;
   padding: 0 2.5%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.new-project h3 {
-  font-size: 1.5rem;
-  color: #0c8e88;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-
-.new-project button {
-  background-color: #0C8E88;
-  padding: 15px 25px;
-  border-radius: 10px;
-  color: #FFFFFF;
-  font-family: "Montserrat", sans-serif;
-  border: none;
-  font-size: 1rem;
-}
-
-.new-project button:active {
-  transform: scale(0.9);
-  background-color: #025651;
+.blog-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
 .footer-container {
@@ -464,7 +283,6 @@ nav {
   background-color: #0c8e88;
   position: relative;
   margin-top: 100px;
-
 }
 
 footer {
@@ -558,9 +376,6 @@ footer {
 
 /* Laptop view */
 @media (max-width: 1024px) {
-  .about-intro-text h2 {
-    font-size: 2.4rem;
-  }
 }
 
 /* Small screens view  and Large Tablet*/
@@ -573,8 +388,8 @@ footer {
     font-size: 1.15rem;
   }
 
-  .about-intro-text h2 {
-    font-size: 2.3rem;
+  .genz-container {
+    margin-top: 50px;
   }
 
   .footer-logo {
@@ -605,54 +420,6 @@ footer {
     display: none;
   }
 
-  .about-intro-container {
-    margin-top: 50px;
-  }
-
-  .about-intro-text {
-    width: 90%;
-  }
-
-  .about-intro-text h2 {
-    font-size: 2.2rem;
-    line-height: 2.7rem;
-  }
-
-  .about-intro-img {
-    display: none;
-  }
-
-  .service-agency-container {
-    margin-top: 50px;
-  }
-
-  .service-agency-text {
-    width: 90%;
-  }
-
-  .title-services {
-    margin-top: 25px;
-  }
-
-  .service-agency-img {
-    display: none;
-  }
-
-  .our-mission-container {
-    margin-top: 70px;
-  }
-
-  .our-mission h3,
-  .about-us h3 {
-    font-size: 2.1rem;
-    line-height: 2.4rem;
-  }
-
-  
-  .new-project button {
-    padding: 12px 22px;
-  }
-
   .footer-container {
     margin-top: 75px;
   }
@@ -679,86 +446,17 @@ footer {
     height: 60px;
   }
 
-  .about-intro-container {
-    margin-top: 35px;
-  }
-
-  .about-intro-text {
-    width: 100%;
-  }
-
-  .about-intro-text h2 {
-    font-size: 1.99rem;
-    line-height: 2.4rem;
-  }
-
-  .service-agency-container {
+  .genz-container {
     margin-top: 30px;
   }
 
-  .service-agency-text {
-    width: 100%;
+  .genz-text h3 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
   }
 
-  .service-agency-text p {
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-  }
-
-  .service-agency-text p:nth-child(2) {
-    margin-top: 15px;
-  }
-
-  .title-services {
-    max-width: 350px;
-    height: 60px;
-  }
-
-  .our-mission-container {
-    background: linear-gradient(180deg, #02746f 50%, #fff 50%);
-  }
-
-  .our-mission-text {
-    min-height: 600px;
-    flex-direction: column;
-  }
-
-  .our-mission-text1 {
-    width: 90%;
-    min-height: 300px;
-    display: flex;
-  }
-
-  .our-mission h6,
-  .about-us h6 {
-    font-size: 0.8rem;
-  }
-
-  .our-mission p,
-  .about-us p {
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-  }
-
-  .our-mission h3,
-  .about-us h3 {
-    font-size: 2rem;
-    line-height: 2.3rem;
-    margin: 10 px 0;
-  }
-
-  .new-project-container {
-    margin-top: 0;
-  }
-
-  .new-project h3 {
-    font-size: 1.2rem;
-  }
-
-  .new-project button {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-    border-radius: 7px;
+  .blog-img-container { 
+    margin-top: 30px;
   }
 
   .footer-container {
