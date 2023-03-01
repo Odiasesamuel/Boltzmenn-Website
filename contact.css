@@ -348,9 +348,9 @@ form {
   bottom: 1px;
   position: absolute;
   background: #0c8e88;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
+  transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
 }
 
 .wave-group .bar:before {
