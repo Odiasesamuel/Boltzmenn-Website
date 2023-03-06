@@ -10,7 +10,7 @@
 button#scroll-to-top {
   background-color: #07726d;
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   width: 50px;
   height: 50px;
@@ -21,6 +21,14 @@ button#scroll-to-top {
   border: none;
   color: #f8f7f7;
   z-index: 200;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .header-container {
@@ -444,10 +452,10 @@ nav {
 }
 
 .new-project button {
-  background-color: #0C8E88;
+  background-color: #0c8e88;
   padding: 15px 25px;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   border: none;
   font-size: 1rem;
@@ -464,7 +472,6 @@ nav {
   background-color: #0c8e88;
   position: relative;
   margin-top: 100px;
-
 }
 
 footer {
@@ -648,7 +655,6 @@ footer {
     line-height: 2.4rem;
   }
 
-  
   .new-project button {
     padding: 12px 22px;
   }

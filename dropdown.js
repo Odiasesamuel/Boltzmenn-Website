@@ -7,7 +7,6 @@ open_btn.addEventListener("click", () => {
   nav.forEach((nav_el) => nav_el.classList.add("visible"));
   open_btn.style.opacity = "0";
   document.body.style.overflow = "hidden";
-  btnScrollToTop.style.opacity = "0";
 });
 
 close_btn.addEventListener("click", () => {
@@ -17,16 +16,31 @@ close_btn.addEventListener("click", () => {
   btnScrollToTop.style.opacity = "1";
 });
 
-// Scroll to top
-const btnScrollToTop = document.getElementById("scroll-to-top");
+// Scroll to top button
+var target = document.getElementById("target");
+var scrollToTopBtn = document.querySelector("#scroll-to-top");
 
-btnScrollToTop.addEventListener("click", () => {
+function callback(entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      scrollToTopBtn.classList.add("showBtn");
+    } else {
+      scrollToTopBtn.classList.remove("showBtn");
+    }
+  });
+}
+
+function scrollToTop() {
   window.scrollTo({
     top: 0,
     left: 0,
     behavior: "smooth",
   });
-});
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
+let observer = new IntersectionObserver(callback);
+observer.observe(target);
 
 // Services Dropdown Desktop/Laptop
 const services_btn = document.getElementById("services-btn");
@@ -46,22 +60,20 @@ function removeServiceList(e) {
     e.target.id != "services-btn"
   ) {
     services_btn.style.color = "#18191f";
-    
+
     servicesList.forEach((service) => {
       service.classList.add("show");
     });
-    setTimeout(resetServiceList, 700)
+    setTimeout(resetServiceList, 700);
   }
 }
 
 function resetServiceList() {
-    servicesBox.style.display = "none";
-    servicesList.forEach((service) => {
-      service.classList.remove("show");
-    });
+  servicesBox.style.display = "none";
+  servicesList.forEach((service) => {
+    service.classList.remove("show");
+  });
 }
-
-
 
 // Services Dropdown Tablet/Mobile
 const services_btn_mobile = document.getElementById("services-btn-mobile");
@@ -80,18 +92,16 @@ function removeServiceListMobile(e) {
     !e.target.classList.contains("services-nav-mobile") &&
     e.target.id != "services-btn-mobile"
   ) {
-    
     servicesListMobile.forEach((service) => {
       service.classList.add("show");
     });
-    setTimeout(resetServiceListMobile, 700)
+    setTimeout(resetServiceListMobile, 700);
   }
 }
 
 function resetServiceListMobile() {
-    servicesBoxMobile.style.display = "none";
-    servicesListMobile.forEach((service) => {
-      service.classList.remove("show");
-    });
+  servicesBoxMobile.style.display = "none";
+  servicesListMobile.forEach((service) => {
+    service.classList.remove("show");
+  });
 }
-
