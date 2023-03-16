@@ -900,7 +900,6 @@ footer {
 
   .technology-img,
   .growth-img {
-    background-image: url(images/Image\ 2.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 47%;
@@ -909,8 +908,12 @@ footer {
     border-radius: 20px;
   }
 
-  .growth-img {
-    background-image: url(images/Image\1\\(1\).png);
+  .technology-img.tech {
+    background-image: url(images/Image\ 2.png);
+  }
+
+  .growth-img.grow {
+    background-image: url(images/Image\ 1\ \(1\).png);
   }
 
   .technology-img.branding {
@@ -918,7 +921,7 @@ footer {
   }
 
   .growth-img.education {
-    background-image: url(images/Image\1\\(2\).png);
+    background-image: url(images/Image\ 1\ \(2\).png);
   }
 
   .img1,
